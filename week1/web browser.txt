@@ -1,0 +1,34 @@
+The wweb broser is used to view pages.
+Most web browser have a similar structure and consists of the following parts:
+1. user inerface
+2. browser engine
+3. rendering engine
+4. network
+5. js interpreter
+6. xml parser
+7. storage
+
+The user interface is very similar across most browsers with some changes here and there.
+There is a place to type urls, back, forward and refresh keys, and settings and history.
+We can change certain webpage configurations via browser, like the font which is usually
+set at 16px
+
+The browser engine executes javascript code, it provides a sandbox for the javascript to run in the browser.
+Some popular browsers and their engines are:
+1. chrome:  V8
+2. mozilla: spidermonkey
+3. edge:    chakra
+4. safari:  nitro
+
+The rendering engine parses the css files and paints the HTML structure, so to speak,
+Some popular browsers and their rendering engines are:
+1. chrome:  blink
+2. mozilla: gecko
+3. edge:    edge
+4. safari:  webkit
+
+The network component of a browser handles all internet communications and securties.
+The JS interpreter gives a sandbox to run javascript line by line, the console.
+XML parser is used to parse XML files, nowadays JSON is more popular.
+Nowadays the browser provides several storage options like Cookies, LocalStorage,
+IndexedDb and WebSQL. They usually can store upto 50mb of data.

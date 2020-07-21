@@ -1,0 +1,16 @@
+The DOM, or Document Object Model is a programming API for HTML documents. 
+It defines the logical structure of documents and the way a HTML document is 
+parsed and manipulated. With the help of the DOM we can parse the HTML files in javascript
+and manipulate the various elements of the webpage. The DOM gives us an interface
+to interact and manipulate the webpage, this includes changing the structure and style,
+listening for events like hover, click, keypress, etc.
+
+The DOM is created as a tree data strucutre, because of various resons like:
+1. accessing child elements quickly
+2. elements can be accessed without index
+3. worst case time complexity is reduced
+4. if parent element is deleted, its children are removed automatically,
+    if it had been an array then we oud have to remove the children manually,
+    and there would have been empty spaces in the array
+5. the tree data structure allowa us to travel from one node to its child, parent, sibling
+    all in one step
