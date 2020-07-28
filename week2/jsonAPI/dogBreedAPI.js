@@ -6,3 +6,8 @@ request.onload = function() {
   var data = JSON.parse(this.response)
   console.log(data);
 }
+
+window.onerror = function(message, url, lineNumber) {
+  log(msg);
+  return true;
+};
