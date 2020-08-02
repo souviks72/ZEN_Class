@@ -30,3 +30,37 @@ class Customer{
     verifyPassword(){}
 }
 
+class ATMTransactions{
+    constructor(id,date,type,amount,postBalance){
+        this.id = id;
+        this.date = data;
+        this.type = type;
+        this.amount = amount;
+        this.postBalance = postBalance;
+    }
+
+    modifies(){}
+}
+
+class Account{
+    constructor(number,balance){
+        this.number = number;
+        this.balance = balance;
+    }
+
+    deposit(){}
+    withdraw(){}
+    createTransaction(ATMTransactions){}
+}
+
+class currentAccount extends Account{
+    constructor(number,balance){
+        super(number,balance);
+    }
+}
+
+class savingsAccount extends Account{
+    constructor(number,balance){
+        super(number,balance);
+    }
+}
