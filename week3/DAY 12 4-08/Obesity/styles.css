@@ -1,0 +1,171 @@
+html{
+    font-size: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 40%;
+    margin: 30px auto;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgba(14, 18, 24, 0.904);
+}
+
+.row{
+    background-color: #15c070;
+    max-height: 30rem;
+    width: 80%;
+    min-height: 100px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.row1-left{
+    background-image: url(./images/obesity-icon.jpg);
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 10px;;
+}
+
+.row1-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.row1-right h2{
+    font-size: 4rem;
+    font-weight: 1000;
+    color: rgb(233, 61, 61);
+    padding: 0;
+    margin: 0;
+}
+
+.row1-right h5{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: transparent;
+    
+    text-align: center;
+}
+.row2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: 50%;
+    max-height: 40rem;
+    margin: 1rem auto;
+    padding: 5px;
+    
+}
+
+.row2-content > *{
+    padding: 0;
+    margin: 0;
+}
+
+.row2-content  h1{
+    font-size: 3rem;
+}
+
+.row2-content h3{
+    font-size: 2rem;
+}
+
+.row2-content p{
+    font-size: 1rem;
+}
+
+.row2-left{
+    background-color: #eebd1e;
+}
+
+.row2-right{
+    background-color: #00ace7;
+}
+
+.row3{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color:rgb(233, 61, 61);
+}
+
+.row3-top{
+    display: flex;
+}
+
+.top3-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.top3-left{
+    font-size: 2rem;
+}
+
+.top3-right li{
+    display: inline-block;
+    list-style: none;
+    margin: 3rem 0 1rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.row4{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #00ace7;
+}
+
+.row4 h3{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.row4-right p:first-child {
+    margin-top: 6rem;
+}
+
+.row5{
+    color: white;
+    background-color: rgb(233, 61, 61);
+    display: flex;
+    justify-content: space-between;
+}
+
+.row5 h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.row5 img{
+   
+    margin-right: 5rem;
+    height: 15rem;
+    width: 15rem;
+}
+
