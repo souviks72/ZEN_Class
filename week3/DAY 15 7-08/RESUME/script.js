@@ -89,49 +89,111 @@ skillProfile.appendChild(head2);
 let technical = document.createElement("div");
 technical.classList.add("technical");
 
-technical.innerHTML = `<h4>Technical Skills</h4>
-<div class="skills">
-    <div class="skill-group">
-        <label >Javascript</label>
-        <input type="range" min=0 max="10" value="8">
-    </div>
-    <div class="skill-group">
-        <label>HTML</label>
-        <input type="range" min=0 max="10" value="7">
-    </div>
-    <div class="skill-group">
-        <label>CSS</label>
-        <input type="range" min=0 max="10" value="7">
-    </div>  
-</div>`;
+/////--------------------------------------------------------
+let th4 = document.createElement("h4");
+th4.innerText = "Technical Skills";
+technical.appendChild(th4);
+
+let skillsDiv = document.createElement("div");
+let skillGroup = document.createElement("div");
+skillGroup.classList.add("skill-group");
+let label = document.createElement("label");
+label.innerText = "Javascript";
+let ip = document.createElement("input");
+ip.setAttribute("type","range");
+ip.setAttribute("min","0");
+ip.setAttribute("max","10");
+ip.setAttribute("value","8");
+skillGroup.appendChild(label);
+skillGroup.appendChild(ip);
+skillsDiv.appendChild(skillGroup);
+
+
+let skillGroup2 = document.createElement("div");
+skillGroup2.classList.add("skill-group");
+let label2 = document.createElement("label");
+label2.innerText = "HTML";
+let ip2 = document.createElement("input");
+ip2.setAttribute("type","range");
+ip2.setAttribute("min","0");
+ip2.setAttribute("max","10");
+ip2.setAttribute("value","7");
+skillGroup.appendChild(label2);
+skillGroup.appendChild(ip2);
+skillsDiv.appendChild(skillGroup2);
+
+let skillGroup3 = document.createElement("div");
+skillGroup3.classList.add("skill-group");
+let label3 = document.createElement("label");
+label3.innerText = "HTML";
+let ip3 = document.createElement("input");
+ip3.setAttribute("type","range");
+ip3.setAttribute("min","0");
+ip3.setAttribute("max","10");
+ip3.setAttribute("value","7");
+skillGroup.appendChild(label3);
+skillGroup.appendChild(ip3);
+skillsDiv.appendChild(skillGroup3);
+
+skillsDiv.classList.add("skills");
+
+technical.appendChild(skillsDiv);
+/////---------------------------------------------------------
 
 skillProfile.appendChild(technical);
 
 let additional = document.createElement("div");
 additional.classList.add("additional");
 
-additional.innerHTML = `<div class="additional">
-<h4>Additional Skills</h4>
-<div class="skills">                           
-    <div class="skill-group">
-        <label>Product Management</label>
-        <input type="range" min=0 max="10" value="7">
-    </div>
-    <div class="skill-group">
-        <label>Fund Raising</label>
-        <input type="range" min=0 max="10" value="7">
-    </div>
-    <div class="skill-group">
-        <label>Recruitment</label>
-        <input type="range" min=0 max="10" value="7">
-    </div>
-    <div class="skill-group">
-        <label>Sales</label>
-        <input type="range" min=0 max="10" value="7">
-    </div>
-    
-</div>
-</div>`;
+//----------------------------------------------------------------
+let ah4 = document.createElement("h4");
+ah4.innerText = "Addtional Skills";
+additional.appendChild(ah4);
+
+let skillsDiv2 = document.createElement("div");
+skillsDiv2.classList.add("skills");
+
+let skillGroup4 = document.createElement("div");
+skillGroup4.classList.add("skill-group");
+let label4 = document.createElement("label");
+label4.innerText = "Fund Raising";
+let ip4 = document.createElement("input");
+ip4.setAttribute("type","range");
+ip4.setAttribute("min","0");
+ip4.setAttribute("max","10");
+ip4.setAttribute("value","8");
+skillGroup4.appendChild(label4);
+skillGroup4.appendChild(ip4);
+skillsDiv2.appendChild(skillGroup4);
+
+skillGroup4 = document.createElement("div");
+skillGroup4.classList.add("skill-group");
+label4 = document.createElement("label");
+label4.innerText = "Sales";
+ip4 = document.createElement("input");
+ip4.setAttribute("type","range");
+ip4.setAttribute("min","0");
+ip4.setAttribute("max","10");
+ip4.setAttribute("value","9");
+skillGroup4.appendChild(label4);
+skillGroup4.appendChild(ip4);
+skillsDiv2.appendChild(skillGroup4);
+
+skillGroup4 = document.createElement("div");
+skillGroup4.classList.add("skill-group");
+label4 = document.createElement("label");
+label4.innerText = "Product Management";
+ip4 = document.createElement("input");
+ip4.setAttribute("type","range");
+ip4.setAttribute("min","0");
+ip4.setAttribute("max","10");
+ip4.setAttribute("value","7");
+skillGroup4.appendChild(label4);
+skillGroup4.appendChild(ip4);
+skillsDiv2.appendChild(skillGroup4);
+
+additional.appendChild(skillsDiv2);
+//----------------------------------------------------------------
 skillProfile.appendChild(additional);
 left.appendChild(skillProfile);
 
