@@ -1,0 +1,17 @@
+.container {
+    border: 1px solid rgba(0, 0, 0, .11);
+    padding: 10px;
+    width: 500px
+}
+
+.container-1{
+    margin-top: 40px;
+}
+
+.controls-item {
+    display: inline-block;
+}
+
+.btn {
+    margin: 1px;
+}
