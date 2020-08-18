@@ -28,7 +28,7 @@ let container = document.querySelector('.container');
 
 submit.addEventListener('click',function(e){
     submit.style.display = 'none';
-    makeRequest('get', 'https://restcountries.eu/rest/v2/all')
+    makeRequest('get', 'https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json')
     .then(function (data) {
         return JSON.parse(data);
     })
