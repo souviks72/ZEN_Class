@@ -1,0 +1,43 @@
+.container{
+    margin: 0 auto;
+}
+
+h5{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(219, 188, 119),rgb(39, 97, 63));
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 70px;
+    height: 50px;
+}
+
+button{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    width: fit-content;
+    margin: 3px auto;
+}
+
+
