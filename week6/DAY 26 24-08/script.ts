@@ -48,8 +48,9 @@ const map = (arr,func) => {
     let i = 0;
     let res = [];
     while(i<arr.length){
-        let x = func(arr[i++]);
+        let x = func(arr[i],i,arr);
         res.push(x);
+        i++;
     }
     return res;
 }
@@ -62,7 +63,7 @@ const filter = (arr,func) => {
     let i = 0;
     let res = [];
     while(i<arr.length){
-        if(func(arr[i])===true)
+        if(func(arr[i],i,arr)===true)
             res.push(arr[i]);
         i++;
     }
@@ -75,7 +76,7 @@ const reduce = (arr,func,acc) => {
 
     let i = 0;
     while(i<arr.length){
-        acc += func(arr[i]);
+        acc = func(acc,arr[i],i,arr);
         i++;
     }
     return acc;
