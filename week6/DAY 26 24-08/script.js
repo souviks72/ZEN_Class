@@ -36,8 +36,9 @@ var map = function (arr, func) {
     var i = 0;
     var res = [];
     while (i < arr.length) {
-        var x = func(arr[i++]);
+        var x = func(arr[i], i, arr);
         res.push(x);
+        i++;
     }
     return res;
 };
@@ -48,7 +49,7 @@ var filter = function (arr, func) {
     var i = 0;
     var res = [];
     while (i < arr.length) {
-        if (func(arr[i]) === true)
+        if (func(arr[i], i, arr) === true)
             res.push(arr[i]);
         i++;
     }
@@ -59,7 +60,7 @@ var reduce = function (arr, func, acc) {
         return undefined;
     var i = 0;
     while (i < arr.length) {
-        acc += func(arr[i]);
+        acc = func(acc, arr[i], i, arr);
         i++;
     }
     return acc;
