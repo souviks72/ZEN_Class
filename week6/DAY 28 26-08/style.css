@@ -1,0 +1,26 @@
+.tv{
+    max-width: 60%;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.screen{
+    height: 300px;
+    width: 500px;
+}
+
+.remote{
+    margin:0 auto;
+    width: fit-content;
+}
+
+.btn{
+    width: 200px;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.row{
+    
+}
