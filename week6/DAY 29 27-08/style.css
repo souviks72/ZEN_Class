@@ -1,0 +1,103 @@
+.container{
+    max-width: fit-content;
+    max-height: 800px;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+}
+
+.list-row{
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-track-color: rgba(0,0,0,0.5) white;
+}
+
+.list-row::-webkit-scrollbar{
+    width: 5px;
+}
+
+.list-row::-webkit-scrollbar-track{
+    background: white;
+}
+
+.list-row::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+ul{
+    list-style: none;
+    width: fit-content;
+    height: inherit;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+li{
+    padding: 5px ;
+    margin: 10px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    border-radius: 15px;
+}
+
+li:hover{
+    transform: scale(1.05);
+    cursor: pointer; 
+}
+
+.player{
+    margin: 2px auto;
+    position: absoulte;
+}
+
+audio{
+    margin: 5px auto;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1px solid gray;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    height: 60px;
+}
+
+button,button:visited,button:active{
+    padding: 3px;
+    margin:auto;
+    width: 40%;
+    height: fit-content;
+    outline: none;
+    border:none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+button:hover{
+    transform: scale(1.05);
+    outline: none;
+    border:none;
+}
+
+
+
+.songDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(to right lightgray, rgb(243, 229, 229));
+
+}
+    
+
+h6{
+    margin-left: 10px;
+}
+
+img{
+    border: 1px solid lightgray;
+    padding:0;
+    border-radius: 15px;
+}
