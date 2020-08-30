@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cricket</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">CRICKET 10</h1>
+        <div class="container controller">
+            <div class="container team1">
+                <h4 class="h4">TEAM 1 SCORE</h4>
+                <h4 class="h4 score-1">0</h4>
+                <button class="hit-1 btn btn-primary">HIT</button>
+            </div>
+            <div class="container timer">
+                <h4 class="h4">TIMER</h4>
+                <h4 class="h4 time">60</h4>
+            </div>
+            <div class="container team2">
+                <h4 class="h4">TEAM 2 SCORE</h4>
+                <h4 class="h4 score-2">0</h4>
+                <button class="hit-2 btn btn-primary">HIT</button>
+            </div>
+        </div>
+        <div class="container tables">
+            <div class="table-1">
+                <div class="h6 scorecard">Team 1 ScoreCard</div>
+                <table class="table1">
+                    <thead>
+                        <tr>
+                            <th>TEAM 1</th>
+                            <th>B1</th>
+                            <th>B2</th>
+                            <th>B3</th>
+                            <th>B4</th>
+                            <th>B5</th>
+                            <th>B6</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="t1p1">Player 1</th><td id="t1p1b1"></td><td id="t1p1b2"></td><td id="t1p1b3"></td><td id="t1p1b4"></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th  id="t1p2">Player 2</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t1p3">Player 3</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+    
+                        <tr>
+                            <th id="t1p4">Player 4</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t1p5">Player 5</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t1p6">Player 6</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+    
+                        <tr>
+                            <th id="t1p7">Player 7</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t1p8">Player 8</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t1p9">Player 9</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t1p10">Player 10</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                    </tbody>     
+                </table>
+            </div>
+            
+
+            <div class="container results">
+                <button class="gen btn btn-primary">Generate Results</button>
+                <div class="container win">
+                    <h6 class="h6">MATCH WON BY</h6>
+                    <h6 class="h6 winner">&nbsp;</h6>
+                </div>
+                <div class="container mom">
+                    <h6 class="h6">MAN OF THE MATCH</h6>
+                    <h6 class="h6 mom">&nbsp;</h6>
+                </div>
+            </div>
+
+            <div class="table-2">
+                <div class="h6 scorecard" >Team 2 ScoreCard</div>
+                <table class="table2">
+                    <thead>
+                        <tr>
+                            <th>TEAM 2</th>
+                            <th>B1</th>
+                            <th>B2</th>
+                            <th>B3</th>
+                            <th>B4</th>
+                            <th>B5</th>
+                            <th>B6</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="t2p1">Player 1</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th  id="t2p2">Player 2</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t2p3">Player 3</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+    
+                        <tr>
+                            <th id="t2p4">Player 4</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t2p5">Player 5</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t2p6">Player 6</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+    
+                        <tr>
+                            <th id="t2p7">Player 7</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t2p8">Player 8</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t2p9">Player 9</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th id="t2p10">Player 10</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                    </tbody>     
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
