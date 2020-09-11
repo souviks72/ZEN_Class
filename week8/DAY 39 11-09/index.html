@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        db.pets.insertMany([{<br>
+            "name": "Tommy",<br>
+            "species": "Dog",<br>
+            "breed": "local street dog",<br>
+            "age": 2,<br>
+            "gender": "male",<br>
+            "price": 2000,<br>
+            "adopted": false<br>
+        },{<br>
+            "name": "Rani",<br>
+            "species": "Dog",<br>
+            "breed": "local street dog",<br>
+            "age": 1,<br>
+            "gender": "female",<br>
+            "price": 2000,<br>
+            "adopted": true<br>
+        },{<br>
+            "name": "Ludo",<br>
+            "species": "Dog",<br>
+            "breed": "labrador",<br>
+            "age": 1,<br>
+            "gender": "male",<br>
+            "price": 10000,<br>
+            "adopted": true<br>
+        },{<br>
+            "name": "Meowth",<br>
+            "species": "Cat",<br>
+            "breed": "local",<br>
+            "age": 1,<br>
+            "gender": "male",<br>
+            "price": 1000,<br>
+            "adopted": false<br>
+        },{<br>
+            "name": "Bugs Bunny",<br>
+            "species": "Rabbit",<br>
+            "breed": "himalayan",<br>
+            "age": 1,<br>
+            "gender": "male",<br>
+            "price": 500,<br>
+            "adopted": false<br>
+        }<br>
+    ])<br><br><br>
+
+    db.shop.insertOne({<br>
+        "name": "Happy Pet Shop",<br>
+        "address": "1 Happy Street, Pripyat, Ukraine, 700990",<br>
+        "phone_number": 1234567890,<br>
+        "email": "happy@petshop.com",<br>
+        "pets": [ObjectId("5f5b932d1ee2c5e591341d18"),ObjectId("5f5b932d1ee2c5e591341d19"),<br>ObjectId("5f5b932d1ee2c5e591341d1a"),ObjectId("5f5b932d1ee2c5e591341d1b"),ObjectId("5f5b932d1ee2c5e591341d1c")]<br>
+    })<br><br><br>
+
+        db.customers.insertMany([{<br>
+            "name": "Ivan",<br>
+            "phone": 2341567089,<br>
+            "email": "ivan@terrible.com",<br>
+            "pet_adopted": ObjectId("5f5b932d1ee2c5e591341d1a")<br>
+        },{<br>
+            "name": "Ankur Kumar",<br>
+            "phone": 6781567089,<br>
+            "email": "ankur@king.com",<br>
+            "pet_adopted": ObjectId("5f5b932d1ee2c5e591341d19")<br>
+        }<br>
+    ])<br>
+    </div>
+</body>
+</html>

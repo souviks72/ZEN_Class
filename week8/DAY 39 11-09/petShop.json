@@ -1,0 +1,68 @@
+db.pets.insertMany([{
+        "name": "Tommy",
+        "species": "Dog",
+        "breed": "local street dog",
+        "age": 2,
+        "gender": "male",
+        "price": 2000,
+        "adopted": false
+    },{
+        "name": "Rani",
+        "species": "Dog",
+        "breed": "local street dog",
+        "age": 1,
+        "gender": "female",
+        "price": 2000,
+        "adopted": true
+    },{
+        "name": "Ludo",
+        "species": "Dog",
+        "breed": "labrador",
+        "age": 1,
+        "gender": "male",
+        "price": 10000,
+        "adopted": true
+    },{
+        "name": "Meowth",
+        "species": "Cat",
+        "breed": "local",
+        "age": 1,
+        "gender": "male",
+        "price": 1000,
+        "adopted": false
+    },{
+        "name": "Bugs Bunny",
+        "species": "Rabbit",
+        "breed": "himalayan",
+        "age": 1,
+        "gender": "male",
+        "price": 500,
+        "adopted": false
+    }
+])
+ObjectId("5f5b932d1ee2c5e591341d18"),
+ObjectId("5f5b932d1ee2c5e591341d19"),
+ObjectId("5f5b932d1ee2c5e591341d1a"),
+ObjectId("5f5b932d1ee2c5e591341d1b"),
+ObjectId("5f5b932d1ee2c5e591341d1c")
+
+db.shop.insertOne({
+    "name": "Happy Pet Shop",
+    "address": "1 Happy Street, Pripyat, Ukraine, 700990",
+    "phone_number": 1234567890,
+    "email": "happy@petshop.com",
+    "pets": [ObjectId("5f5b932d1ee2c5e591341d18"),ObjectId("5f5b932d1ee2c5e591341d19"),ObjectId("5f5b932d1ee2c5e591341d1a"),ObjectId("5f5b932d1ee2c5e591341d1b"),ObjectId("5f5b932d1ee2c5e591341d1c")]
+})
+
+db.customers.insertMany([{
+        "name": "Ivan",
+        "phone": 2341567089,
+        "email": "ivan@terrible.com",
+        "pet_adopted": ObjectId("5f5b932d1ee2c5e591341d1a")
+    },{
+        "name": "Ankur Kumar",
+        "phone": 6781567089,
+        "email": "ankur@king.com",
+        "pet_adopted": ObjectId("5f5b932d1ee2c5e591341d19")
+    }
+])
