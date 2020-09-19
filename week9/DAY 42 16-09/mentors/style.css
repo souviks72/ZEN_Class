@@ -1,0 +1,17 @@
+.container{
+    max-width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+form > *{
+    margin: 5px;
+}
